@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 30px 50px 30px 50px;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.navbar li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 120%;
+    border: solid #55CDFC 2px;
+    border-radius: 30px;
+    padding: 10px;
+    color: #F7A8B8;
+    box-shadow: 3px 3px #F7A8B8;
+}
+
+.navbar li a:hover {
+    background-color: lightgrey;
+}
+
+.navbar h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 300%;
+    color: #55CDFC;
+    text-shadow: 3px 3px #F7A8B8;
+}
+
+.mysticToaster{
+    max-height: 216px;
+    max-width: 216px;
+}
+
+body {
+    background-color: lightgrey;
+    font-family: "Montserrat", sans-serif;
+}
+
+.body-container {
+    padding: 30px;
+}
+
+.title {
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px dimgrey;
+    border-radius: 10px !important;
+    line-height: 200%;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.title:hover::before {
+    text-decoration: none;
+    content: "★";
+}
+
+.title::before {
+    text-decoration: none;
+    content: "☆";
+}
+
+.title:hover::after {
+     text-decoration: none;
+     content: "★";
+}
+
+.title::after {
+    text-decoration: none;
+    content: "☆";
+}
+
+.small-image:hover{
+    max-height: 400px;
+    max-width: 400px;
+    transition: all 0.3s ease-in-out
+}
+
+.small-image {
+    max-height: 250px;
+    max-width: 250px;
+    transition: all 0.3s ease-in-out
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    padding: 10px;
+    overflow-y: scroll;
+
+}
+
+.trans {
+    background-color: ghostwhite;
+    border: 3px #55CDFC solid;
+    box-shadow: 5px 5px #F7A8B8;
+    border-radius: 216px;
+}
+
+.cis {
+    background-color: ghostwhite;
+    border: 3px black solid;
+    box-shadow: 5px 5px dimgrey;
+    border-radius: 30px;
+}
+
+.text-container{
+    display: block;
+    padding: 50px;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 99%;
+    padding: 0px 0px 0px 20px !important;
+    bottom: 0;
+    background-color: ghostwhite;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
