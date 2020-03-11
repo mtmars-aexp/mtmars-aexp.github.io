@@ -5,6 +5,9 @@ let art = {
     "mysticToaster Vol. 8": "images/album/vol8.png",
     "mysticToaster Vol. 7": "images/album/vol7.jpg",
     "mysticToaster Vol. 6": "images/album/vol6.png",
+    "mysticToaster Vol. 5.5": "images/album/vol5.5.png",
+    "mysticToaster Vol. 5": "images/album/vol5.png",
+    "mysticToaster Vol. 4": "images/album/vol4.png",
     "toastercrowd": "images/album/toastercrowd.png",
 };
 
@@ -28,7 +31,7 @@ function atLastSong(currentSong){
 }
 
 function updatePlayer(currentSong){
-    console.log("Now playing song: " + songs[currentSong].source);
+    console.log("Now playing: " + songs[currentSong].source);
 
     document.getElementById('musicplayer-deincrement').disabled = atFirstSong(currentSong);
     document.getElementById('musicplayer-deincrement').className = atFirstSong(currentSong) ? "cis button" : "trans button";

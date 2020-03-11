@@ -2,6 +2,9 @@ const vol9 = "mysticToaster Vol. 9";
 const vol8 = "mysticToaster Vol. 8";
 const vol7 = "mysticToaster Vol. 7";
 const vol6 = "mysticToaster Vol. 6";
+const vol55 = "mysticToaster Vol. 5.5";
+const vol5 = "mysticToaster Vol. 5";
+const vol4 = "mysticToaster Vol. 4";
 const crowd = "toastercrowd";
 
 function getSongs(){
@@ -129,6 +132,48 @@ function getSongs(){
         {
             source: 'Sumbitch-Smoothies',
             album: vol9,
-        }
+        },
+        {
+            source: 'King-Of-The-Monsters',
+            album: vol55,
+        },
+        {
+            source: 'Ghost-Ride',
+            album: vol55,
+        },
+        {
+            source: 'forgetting-old-friendships',
+            album: vol4,
+        },
+        {
+            source: 'War-Of-The-Primords',
+            album: vol4,
+        },
+        {
+            source: 'Battle-Against-A-Maniacal-Alien',
+            album: vol4,
+        },
+        {
+            source: 'Sunny',
+            album: vol4,
+        },
+        {
+            source: 'Sky-Pirate-Assault',
+            album: vol4,
+        },
+        {
+            source: 'Annabelle-Sunray\'s-Subconsciousness',
+            album: vol5,
+        },
+        {
+            source: 'Kickin\'-Up-Dirt',
+            album: vol5,
+        },
+        {
+            source: 'the-crazy-cat-just-cannot-be-stopped',
+            album: vol5,
+        },
+
+
     ].sort((a,b) => a.source.localeCompare(b.source));
 }
