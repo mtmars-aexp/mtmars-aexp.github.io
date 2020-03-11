@@ -16,7 +16,7 @@
     padding: 20px;
 }
 
-.navbar li a {
+.navbar li a, .button{
     font-family: "Montserrat", sans-serif;
     font-size: 120%;
     border: solid #55CDFC 2px;
@@ -115,6 +115,7 @@ body {
     border: 3px black solid;
     box-shadow: 5px 5px dimgrey;
     border-radius: 30px;
+    color: grey !important;
 }
 
 .text-container{
@@ -134,4 +135,24 @@ body {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
+
+#musicplayer-controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.album-art{
+    height:300px;
+    width:300px;
+    border-radius:10px !important;
+}
+
+#musicplayer-title::before{
+    content: "🎵: ";
+}
+
+
 

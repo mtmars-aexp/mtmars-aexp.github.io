@@ -2,9 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>My music</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/code.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/musiclist.js"></script>
+    <script type="text/javascript" src="js/musicplayer.js"></script>
+    <link rel="icon" href="icons/blobcat.png">
 </head>
 <body>
-$END$
+
+    <div id="replace-navbar">
+        <script>loadComponent('navbar');</script>
+    </div>
+
+    <div class="body-container">
+
+        <h1 class = "trans title"> Music! </h1>
+
+        <div id="musicplayer-container" style="padding:30px">
+            <div id="musicplayer-controls">
+                <button id="musicplayer-deincrement" onclick="changeMusic(-1)" class="cis button" disabled style="padding: 10px">Previous</button>
+                <img id="musicplayer-art" alt="Album art" src="images/album/vol7.jpg" class="trans album-art">
+                <button id="musicplayer-increment" onclick="changeMusic(1)" class="trans button" style="padding: 10px">Next</button>
+            </div>
+            <div id="musicplayer-information" style="text-align: center; padding: 30px">
+                <audio id="musicplayer-player" controls="controls">
+                    <source id="musicplayer-source" src="audio/auffytune.mp3" >
+                </audio>
+                <br>
+                <br>
+                <div class="cis title">
+                    <p id="musicplayer-title">Auffytune</p>
+                    <p id="musicplayer-album">mysticToaster Vol. 7</p>
+                </div>
+            </div>
+        </div>
+
+        <h1 class = "trans title"> Some other stuff I've worked on! </h1>
+
+        <div class="trans row">
+            <img class="album-art" src="images/modifiedpixels.jpg" alt="Modified Pixels album art"/>
+            <div class="text-container" style="max-width: 600px">
+                <h1><a href="https://screwheili.bandcamp.com/album/mp3">Modified Pixels 3</a></h1>
+                <p>Modified Pixels 3 is a hiphop/vaporwave album I contributed some tracks to, along with a handful of other artists.
+                I only made <a href="https://screwheili.bandcamp.com/track/kris-lowlights-space-delinquents-prod-mystictoaster">one song</a> worth listening to. The rest of my contributions are really shite and I was like "hey I don't really wanna have these in the album" but the guy in charge was like "nah they're fire as fuck"
+                It was really fuckin' sick-nasty to be able to produce a phat beat that someone else rapped over.</p>
+                <p>I remember there being a ton of delay with this project. I think I was involved for over a year before it actually came out.
+                I was originally scoped for the project after I posted a shitty ironic Undertale vaportrap remix on Soundcloud to which Screwheili commented something to the effect of "oh yeah, that's the real shit mang"</p>
+                <p>To which I replied, "Thanks, you can fuck my wife anytime." T'was a beautiful collaborative relationship from then on.</p>
+            </div>
+        </div>
+
+        <div class="trans row">
+            <img style="max-width: 500px; height: auto; border-radius: 30px;" src="images/overcrowd.png" alt="Overcrowd banner image"/>
+            <div class="text-container" style="max-width: 600px">
+                <h1><a href="https://store.steampowered.com/app/726110/Overcrowd_A_Commute_Em_Up/">Overcrowd: A Commute 'Em Up</a></h1>
+                <p>Overcrowd is a game that many, I'm told, really really enjoy- and I made some of the music for it. Talk about being a part of history.</p>
+                <p>I was asked in fuckin' <em>uhhhhhhhhhhhhhhhhh</em> April 2018 If one of my songs could be used in the trailer for the Official™ Overcrowd™ Steam™ Greenlight Trailer™™™™.
+                    To which I was all like "oh, yeah, sure." Thich was all well and good and sexy, but
+                    despite being credited, I didn't gain any new listeners or fans from this promotion and I continued as a poor starving artist. <em>Until!</em></p>
+                <p>On December of that same year, on my 18th birthday no less, I was contacted yet again by the brave indie developer asking if my music could comprise the games soundtrack! To which I said! "Yes!! Wow!!! Yes please!"
+                I was paid £400 for 19 tracks in total, which for a fuckabout college kid who's not <em>especially</em> good at music, is pretty motherfucking awesomesauce. </p>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
