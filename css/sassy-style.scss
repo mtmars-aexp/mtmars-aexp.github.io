@@ -1,15 +1,23 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
-@media (orientation:landscape) {
-  .device-detector:after {
-    content: "desktop user!";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+$trans-blue: #55CDFC;
+$trans-pink: #F7A8B8;
+
+$desktop-device: "orientation:landscape";
+$mobile-device: "orientation:portrait";
+
+@media($desktop-device){
+  .device-detector:after{
+    content: "desktop user!"
   }
 }
-@media (orientation:portrait) {
-  .device-detector:after {
-    content: "mobile user!";
+
+@media($mobile-device){
+  .device-detector:after{
+    content: "mobile user!"
   }
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -19,31 +27,31 @@
   align-items: center;
   background-color: white;
   border-radius: 25px;
-}
-.navbar li {
-  display: inline-block;
-  padding: 20px;
-}
-.navbar li a, .navbar .button {
-  font-family: "Montserrat", sans-serif;
-  font-size: 120%;
-  border: solid #55CDFC 2px;
-  border-radius: 30px;
-  padding: 10px;
-  color: #F7A8B8;
-  box-shadow: 3px 3px #F7A8B8;
-}
-.navbar li a :hover, .navbar .button :hover {
-  background-color: lightgrey;
-}
-.navbar h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 300%;
-  color: #55CDFC;
-  text-shadow: 3px 3px #F7A8B8;
+  li {
+    display: inline-block;
+    padding: 20px;
+  }
+  li a, .button{
+    font-family: "Montserrat", sans-serif;
+    font-size: 120%;
+    border: solid $trans-blue 2px;
+    border-radius: 30px;
+    padding: 10px;
+    color: $trans-pink;
+    box-shadow: 3px 3px $trans-pink;
+    :hover {
+      background-color: lightgrey;
+    }
+  }
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 300%;
+    color: $trans-blue;
+    text-shadow: 3px 3px $trans-pink;
+  }
 }
 
-.mysticToaster {
+.mysticToaster{
   max-height: 216px;
   max-width: 216px;
 }
@@ -87,31 +95,32 @@ body {
   content: "☆";
 }
 
-.small-image:hover {
+.small-image:hover{
   max-height: 400px;
   max-width: 400px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out
 }
 
 .small-image {
   max-height: 250px;
   max-width: 250px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out
 }
 
-.row {
+.row{
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 50px;
   padding: 30px;
   overflow-y: scroll;
+
 }
 
 .trans {
   background-color: ghostwhite;
-  border: 3px #55CDFC solid;
-  box-shadow: 5px 5px #F7A8B8;
+  border: 3px $trans-blue solid;
+  box-shadow: 5px 5px $trans-pink;
   border-radius: 216px;
 }
 
@@ -123,7 +132,7 @@ body {
   color: grey !important;
 }
 
-.text-container {
+.text-container{
   display: block;
   padding: 50px;
   text-align: center;
@@ -141,19 +150,21 @@ body {
   border-top-right-radius: 25px;
 }
 
-#musicplayer-controls {
+#musicplayer-controls{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.album-art {
-  height: 300px;
-  width: 300px;
-  border-radius: 10px !important;
+
+
+.album-art{
+  height:300px;
+  width:300px;
+  border-radius:10px !important;
 }
 
-#musicplayer-title::before {
+#musicplayer-title::before{
   content: "🎵: ";
 }
 
@@ -161,5 +172,3 @@ html {
   max-width: 1000px;
   margin: auto;
 }
-
-/*# sourceMappingURL=style.css.map */
